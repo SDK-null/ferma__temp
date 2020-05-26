@@ -1,0 +1,77 @@
+@import './grid'
+%font
+  font-family: 'Oswald', sans-serif
+%font-2
+  font-family: 'Pacifico', cursive
+
+%shadow
+  box-shadow: 0px 10px 17px 0px rgba(34, 60, 80, 0.2)
+  -moz-box-shadow: 0px 10px 17px 0px rgba(34, 60, 80, 0.2)
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(34, 60, 80, 0.2)
+
+
+$color-1: #76aa6f
+$red: #f96666
+$gray: #f5f5f5
+$gray-2: #93a6ab
+$color-base: #000000
+li, a
+  @extend %font
+a
+  text-decoration: none
+  color: $color-base
+  font-weight: 600
+  &:hover,&:active
+    color: $color-1
+.contact
+  @extend %flex
+  @extend %flex-row
+  justify-content: center
+  align-items: center
+  // color: $color-1
+  // font-size: 46px
+  
+//Format options
+h1
+  font:
+    size: 3.157em
+  line-height: $line
+  margin-bottom: $base-line
+h2
+  font:
+    size: 2.369em
+  line-height: $line * 1.5
+  margin-bottom: $base-line
+h3
+  font:
+    size: 1.777em
+  line-height: $line * 1.5
+  margin-bottom: $base-line
+h4
+  font:
+    size: 1.33em
+  line-height: $line
+  margin-bottom: $base-line
+p
+  line-height: $base-line * 1.618
+
+img
+  width: 100%
+  margin: .5rem auto
+  display: block
+
+.section-h
+  text-align: center
+  margin: $base-line * 1
+  &.cursiv
+    @extend %font-2
+    color: $color-1
+    
+
+
+=bg($img, $for: webp)
+  background-image: url('../img/#{$img}.#{$for}')
+=bga($img, $for: png)
+  background-image: url('../img/#{$img}.#{$for}')
+//Format options
+

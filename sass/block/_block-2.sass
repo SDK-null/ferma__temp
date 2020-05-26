@@ -1,0 +1,31 @@
+.b-2
+  +bg(b-2,jpg)
+  background-position: center
+  background-size: cover
+  .wrap
+    padding: 5rem 0
+    justify-content: center
+  .img-content
+    // background: #000
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    .img-items
+      margin: 0 1rem
+    .block-namber
+      font:
+        size: $base-line * 4
+        weight: 700
+      color: rgba(255, 255, 255, 0.47843137254901963)
+  .colum-flex
+    @extend %flex
+    @extend %flex-col
+    justify-content: center
+    background: rgba(241, 241, 241, 0.49)
+    margin: $base-line 0
+    border-radius: 10px
+  h4
+    text-align: center
+    font-weight: 700
+    color: #000000

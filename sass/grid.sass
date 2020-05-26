@@ -1,0 +1,378 @@
+// BaseLine
+$colums:12
+$gutter: (100% /$colums)* 0.05
+$one: (100% / $colums)
+$pc-1: 1000px
+$large: 992px
+$table: 600px
+$mobile: 320px
+$line: 16 * 1.618px
+$base-line: 16px 
+// BaseLine
+html
+  color: #000000
+  font: 400 16px/#{$base-line} 'Oswald', sans-serif
+body
+  color: #000000
+  
+  margin-bottom: $base-line * 2
+  div
+    box-sizing: border-box
+
+// Grid
+.container
+  min-width: 320px
+  max-width: 1200px
+  margin: 0 auto
+  &.max
+    max-width: 1920px
+  .wrap
+    width: 100%
+    max-width: inherit
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-bottom: .2rem
+    padding-right: calc( #{$gutter} * 4 )
+    padding-left:  calc( #{$gutter} * 4 )
+    overflow: hidden
+    div
+      padding: .3rem 0
+      position: relative
+      z-index: 1
+      margin-left: $gutter
+    @media (max-width: 318px)
+      .col
+        width: calc( (#{$one} * 6) - #{$gutter})
+    @media ( min-width: $mobile) and (max-width: $table)
+      .col
+        &.s1
+          width: calc( (#{$one} * 1) - #{$gutter})
+        &.s2
+          width: calc( (#{$one} * 2) - #{$gutter})
+        &.s3
+          width: calc( (#{$one} * 3) - #{$gutter})
+        &.s4
+          width: calc( (#{$one} * 4) - #{$gutter})
+        &.s5
+          width: calc( (#{$one} * 5) - #{$gutter})
+        &.s6
+          width: calc( (#{$one} * 6) - #{$gutter})
+        &.s7
+          width: calc( (#{$one} * 7) - #{$gutter})
+        &.s8
+          width: calc( (#{$one} * 8) - #{$gutter})
+        &.s9
+          width: calc( (#{$one} * 9) - #{$gutter})
+        &.s10
+          width: calc( (#{$one} * 10) - #{$gutter})
+        &.s11
+          width: calc( (#{$one} * 11) - #{$gutter})
+        &.s12
+          width: calc( (#{$one} * 12) - #{$gutter})
+        &.lef-s1
+          margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+        &.lef-s2
+          margin-left: calc( (#{$one} * 2) + #{$gutter})
+        &.lef-s3
+          margin-left: calc( (#{$one} * 3) + #{$gutter})
+        &.lef-s4
+          margin-left: calc( (#{$one} * 4) + #{$gutter})
+        &.lef-s5
+          margin-left: calc( (#{$one} * 5) + #{$gutter})
+        &.lef-s6
+          margin-left: calc( (#{$one} * 6) + #{$gutter})
+        &.lef-s7
+          margin-left: calc( (#{$one} * 7) + #{$gutter})
+        &.lef-s8
+          margin-left: calc( (#{$one} * 8) + #{$gutter})
+        &.lef-s9
+          margin-left: calc( (#{$one} * 9) + #{$gutter})
+        &.lef-s10
+          margin-left: calc( (#{$one} * 10) + #{$gutter})
+        &.lef-s11
+          margin-left: calc( (#{$one} * 11) + #{$gutter})
+        &.lef-s12
+          margin-left: calc( (#{$one} * 12) + #{$gutter})
+    @media ( min-width: $table  )
+      .col
+        &.m1
+          width: calc( (#{$one} * 1) - #{$gutter})
+        &.m2
+          width: calc( (#{$one} * 2) - #{$gutter})
+        &.m3
+          width: calc( (#{$one} * 3) - #{$gutter})
+        &.m4
+          width: calc( (#{$one} * 4) - #{$gutter})
+        &.m5
+          width: calc( (#{$one} * 5) - #{$gutter})
+        &.m6
+          width: calc( (#{$one} * 6) - #{$gutter})
+        &.m7
+          width: calc( (#{$one} * 7) - #{$gutter})
+        &.m8
+          width: calc( (#{$one} * 8) - #{$gutter})
+        &.m9
+          width: calc( (#{$one} * 9) - #{$gutter})
+        &.m10
+          width: calc( (#{$one} * 10) - #{$gutter})
+        &.m11
+          width: calc( (#{$one} * 11) - #{$gutter})
+        &.m12
+          width: calc( (#{$one} * 12) - #{$gutter})
+        &.lef-m1
+          margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+        &.lef-m2
+          margin-left: calc( (#{$one} * 2) + #{$gutter})
+        &.lef-m3
+          margin-left: calc( (#{$one} * 3) + #{$gutter})
+        &.lef-m4
+          margin-left: calc( (#{$one} * 4) + #{$gutter})
+        &.lef-m5
+          margin-left: calc( (#{$one} * 5) + #{$gutter})
+        &.lef-m6
+          margin-left: calc( (#{$one} * 6) + #{$gutter})
+        &.lef-m7
+          margin-left: calc( (#{$one} * 7) + #{$gutter})
+        &.lef-m8
+          margin-left: calc( (#{$one} * 8) + #{$gutter})
+        &.lef-m9
+          margin-left: calc( (#{$one} * 9) + #{$gutter})
+        &.lef-m10
+          margin-left: calc( (#{$one} * 10) + #{$gutter})
+        &.lef-m11
+          margin-left: calc( (#{$one} * 11) + #{$gutter})
+        &.lef-m12
+          margin-left: calc( (#{$one} * 12) + #{$gutter})
+    @media ( min-width: $large  )
+      .col
+        &.l1
+          width: calc( (#{$one} * 1) - #{$gutter})
+        &.l2
+          width: calc( (#{$one} * 2) - #{$gutter})
+        &.l3
+          width: calc( (#{$one} * 3) - #{$gutter})
+        &.l4
+          width: calc( (#{$one} * 4) - #{$gutter})
+        &.l5
+          width: calc( (#{$one} * 5) - #{$gutter})
+        &.l6
+          width: calc( (#{$one} * 6) - #{$gutter})
+        &.l7
+          width: calc( (#{$one} * 7) - #{$gutter})
+        &.l8
+          width: calc( (#{$one} * 8) - #{$gutter})
+        &.l9
+          width: calc( (#{$one} * 9) - #{$gutter})
+        &.l10
+          width: calc( (#{$one} * 10) - #{$gutter})
+        &.l11
+          width: calc( (#{$one} * 11) - #{$gutter})
+        &.l12
+          width: calc( (#{$one} * 12) - #{$gutter})
+        &.lef-l1
+          margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+        &.lef-l2
+          margin-left: calc( (#{$one} * 2) + #{$gutter})
+        &.lef-l3
+          margin-left: calc( (#{$one} * 3) + #{$gutter})
+        &.lef-l4
+          margin-left: calc( (#{$one} * 4) + #{$gutter})
+        &.lef-l5
+          margin-left: calc( (#{$one} * 5) + #{$gutter})
+        &.lef-l6
+          margin-left: calc( (#{$one} * 6) + #{$gutter})
+        &.lef-l7
+          margin-left: calc( (#{$one} * 7) + #{$gutter})
+        &.lef-l8
+          margin-left: calc( (#{$one} * 8) + #{$gutter})
+        &.lef-l9
+          margin-left: calc( (#{$one} * 9) + #{$gutter})
+        &.lef-l0
+          margin-left: calc( (#{$one} * 10) + #{$gutter})
+        &.lef-l11
+          margin-left: calc( (#{$one} * 11) + #{$gutter})
+        &.lef-l12
+          margin-left: calc( (#{$one} * 12) + #{$gutter})
+    @media ( min-width: $pc-1  )
+      .col
+        &.xl1
+          width: calc( (#{$one} * 1) - #{$gutter})
+        &.xl2
+          width: calc( (#{$one} * 2) - #{$gutter})
+        &.xl3
+          width: calc( (#{$one} * 3) - #{$gutter})
+        &.xl4
+          width: calc( (#{$one} * 4) - #{$gutter})
+        &.xl5
+          width: calc( (#{$one} * 5) - #{$gutter})
+        &.xl6
+          width: calc( (#{$one} * 6) - #{$gutter})
+        &.xl7
+          width: calc( (#{$one} * 7) - #{$gutter})
+        &.xl8
+          width: calc( (#{$one} * 8) - #{$gutter})
+        &.xl9
+          width: calc( (#{$one} * 9) - #{$gutter})
+        &.xl10
+          width: calc( (#{$one} * 10) - #{$gutter})
+        &.xl11
+          width: calc( (#{$one} * 11) - #{$gutter})
+        &.xl12
+          width: calc( (#{$one} * 12) - #{$gutter})
+        &.lef-xl1
+          margin-left: calc( (#{$one} * 1) + (#{$gutter} * 1))
+        &.lef-xl2
+          margin-left: calc( (#{$one} * 2) + #{$gutter})
+        &.lef-xl3
+          margin-left: calc( (#{$one} * 3) + #{$gutter})
+        &.lef-xl4
+          margin-left: calc( (#{$one} * 4) + #{$gutter})
+        &.lef-xl5
+          margin-left: calc( (#{$one} * 5) + #{$gutter})
+        &.lef-xl6
+          margin-left: calc( (#{$one} * 6) + #{$gutter})
+        &.lef-xl7
+          margin-left: calc( (#{$one} * 7) + #{$gutter})
+        &.lef-xl8
+          margin-left: calc( (#{$one} * 8) + #{$gutter})
+        &.lef-xl9
+          margin-left: calc( (#{$one} * 9) + #{$gutter})
+        &.lef-xl10
+          margin-left: calc( (#{$one} * 10) + #{$gutter})
+        &.lef-xl11
+          margin-left: calc( (#{$one} * 11) + #{$gutter})
+        &.lef-xl12
+          margin-left: calc( (#{$one} * 12) + #{$gutter})
+// VerticalRythm
+
+// EndVerticalRythm
+
+//Animal-Rout
+.anim
+  animation: animationFrames linear 0.8s
+  animation-iteration-count: 1
+  transform-origin: 50% 50%
+  -webkit-animation: animationFrames linear 0.8s
+  -webkit-animation-iteration-count: 1
+  -webkit-transform-origin: 50% 50%
+  -moz-animation: animationFrames linear 0.8s
+  -moz-animation-iteration-count: 1
+  -moz-transform-origin: 50% 50%
+  -o-animation: animationFrames linear 0.8s
+  -o-animation-iteration-count: 1
+  -o-transform-origin: 50% 50%
+  -ms-animation: animationFrames linear 0.8s
+  -ms-animation-iteration-count: 1
+  -ms-transform-origin: 50% 50%
+
+@keyframes animationFrames
+  0%
+    transform: translate(0px, 0px)
+
+  15%
+    transform: translate(1px, -10px)
+
+  30%
+    transform: translate(1px, 0px)
+
+  45%
+    transform: translate(1px, -10px)
+
+  60%
+    transform: translate(1px, 0px)
+
+  75%
+    transform: translate(1px, -5px)
+
+  100%
+    transform: translate(1px, 0px)
+
+@-moz-keyframes animationFrames
+  0%
+    -moz-transform: translate(0px, 0px)
+
+  15%
+    -moz-transform: translate(1px, -10px)
+
+  30%
+    -moz-transform: translate(1px, 0px)
+
+  45%
+    -moz-transform: translate(1px, -10px)
+
+  60%
+    -moz-transform: translate(1px, 0px)
+
+  75%
+    -moz-transform: translate(1px, -5px)
+
+  100%
+    -moz-transform: translate(1px, 0px)
+
+@-webkit-keyframes animationFrames
+  0%
+    -webkit-transform: translate(0px, 0px)
+
+  15%
+    -webkit-transform: translate(1px, -10px)
+
+  30%
+    -webkit-transform: translate(1px, 0px)
+
+  45%
+    -webkit-transform: translate(1px, -10px)
+
+  60%
+    -webkit-transform: translate(1px, 0px)
+
+  75%
+    -webkit-transform: translate(1px, -5px)
+
+  100%
+    -webkit-transform: translate(1px, 0px)
+
+@-o-keyframes animationFrames
+  0%
+    -o-transform: translate(0px, 0px)
+
+  15%
+    -o-transform: translate(1px, -10px)
+
+  30%
+    -o-transform: translate(1px, 0px)
+
+  45%
+    -o-transform: translate(1px, -10px)
+
+  60%
+    -o-transform: translate(1px, 0px)
+
+  75%
+    -o-transform: translate(1px, -5px)
+
+  100%
+    -o-transform: translate(1px, 0px)
+
+@-ms-keyframes animationFrames
+  0%
+    -ms-transform: translate(0px, 0px)
+
+  15%
+    -ms-transform: translate(1px, -10px)
+
+  30%
+    -ms-transform: translate(1px, 0px)
+
+  45%
+    -ms-transform: translate(1px, -10px)
+
+  60%
+    -ms-transform: translate(1px, 0px)
+
+  75%
+    -ms-transform: translate(1px, -5px)
+
+  100%
+    -ms-transform: translate(1px, 0px)
+//Animal-Rout

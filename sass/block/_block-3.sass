@@ -1,0 +1,83 @@
+.b-3
+  margin-top: $base-line * 5
+  margin-bottom: $base-line * 5
+  .card-items
+    display: flex
+    flex-direction: row
+    justify-content: center
+    padding: 2rem 0 !important
+    &__button
+      display: none
+      position: absolute !important
+      width: 100%
+      background: #f5f5f5
+      left: -1px
+      border-top: 2px solid $color-1
+      padding: 1rem 0 !important
+      border-radius: 0px 0 10px 10px
+      transition: all .2s ease
+      div
+        width: 83%
+        margin: 0 auto
+        background: $color-1
+        border-radius: 5px
+        color: #ffffff
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+      span
+        @extend %font
+        margin-left: 1rem
+        font:
+          size: $base-line * 1
+        display: block
+    &__box
+      background: #f5f5f5
+      width: 90%
+      border-radius: 10px
+      padding: 1rem !important
+      padding-top: 2rem !important
+      -webkit-box-shadow: -6px 2px 9px -1px rgba(34, 60, 80, 0.36)
+      -moz-box-shadow: -6px 2px 9px -1px rgba(34, 60, 80, 0.36)
+      box-shadow: -6px 2px 9px -1px rgba(34, 60, 80, 0.36)
+      
+      &:hover
+        border: 0
+        .card-items__button
+          display: block
+
+    &___badge
+      position: absolute !important
+      z-index: 5 !important
+      right: 1rem
+      top: .5rem
+      background: $red
+      color: #ffffff
+      font:
+        weight: 400
+      float: right
+      padding: .5rem .5rem !important
+      border-radius: 5px
+      &.new
+        background: $gray-2
+        color: $color-base
+      &.none
+        display: none
+    &__img
+      color: #ffffff
+    &__name
+      text-align: center
+      font:
+        weight: 700
+        size: $base-line * 1.3
+    &__price
+      color: $color-1
+      font:
+        weight: 600
+      text-align: center
+    &__massa
+      color: $red
+      text-align: right
+      margin-bottom: 2rem
+      
